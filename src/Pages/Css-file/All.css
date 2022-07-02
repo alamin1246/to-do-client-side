@@ -16,11 +16,15 @@
 
 .vhHeight{
   height: 75vh;
+
 }
 .home-info {
   margin-top: 25px;
   display: flex;
   flex-direction: column;
+  border: 2px solid rgb(2, 2, 22);
+  border-radius: 5px;
+  padding: 20px;
   width: 25%;
   margin: 0 auto;
 }
@@ -30,7 +34,7 @@
 .toolsTasks {
   font-weight: bold;
   font-size: 25px;
-  color: #6889ff;
+  color: black;
   text-align: center;
   margin-top: 30px;
 }
@@ -44,7 +48,7 @@
 }
 
 .home-info input {
-  border: 1px solid #74c7f7;
+  border: 1px solid black;
   border-radius: 5px;
   padding: 2px 10px;
   outline: none;
@@ -57,18 +61,21 @@
   padding-bottom: 80px !important;
 }
 .home-info textarea:focus {
-  border: 2px solid #2c4def;
+  border: 2px solid #b6c0f1;
 }
 .home-info input:focus {
-  border: 2px solid #2c4def;
+  border: 2px solid #b6c0f1;
 }
 .arrow {
   text-align: center;
   font-size: 40px;
-  color: green;
+  color: white;
   cursor: pointer;
-  border: none;
-  background: none;
+  border: 1px solid green;
+  border-radius: 10px;
+  background: rgb(35, 35, 39);
+  width: 150px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* All tasks */
 .allTasks-container {

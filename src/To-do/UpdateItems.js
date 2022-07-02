@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { FaArrowCircleRight } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import swal from "sweetalert";
 const UpdateItems = () => {
   const [update, setUpdate] = useState({});
   const { toId } = useParams();
   useEffect(() => {
-    const url = `https://mysterious-tor-58361.herokuapp.com/allTask/${toId}`;
+    const url = `https://apologetic-marks-83647.herokuapp.com/allTask/${toId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setUpdate(data));
@@ -17,7 +16,7 @@ const UpdateItems = () => {
     const taskName = e.target.tName.value;
     const taskDetails = e.target.details.value;
 
-    fetch(`https://mysterious-tor-58361.herokuapp.com/allTask/${toId}`, {
+    fetch(`https://apologetic-marks-83647.herokuapp.com/allTask/${toId}`, {
       method: "PUT",
       body: JSON.stringify({
         name: taskName,
@@ -49,11 +48,17 @@ const UpdateItems = () => {
       <h2 className="toolsTasks taskTitles">Update Your Task</h2>
       <form className="home-info" onSubmit={updateTask}>
         <label>Update Task Name</label>
-        <input type="text" name="tName" />
+        <input type="text" name="tName" placeholder="Enter Task Name" />
         <label>Update Task Details</label>
-        <input className="details-info" type="text" name="details" required />
+        <input
+          className="details-info"
+          type="text"
+          name="details"
+          placeholder="Enter Task Details"
+          required
+        />
         <button type="submit" className="arrow">
-          <FaArrowCircleRight />
+          Submit
         </button>
       </form>
     </div>
