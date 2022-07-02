@@ -1,0 +1,157 @@
+
+.header-nav {
+  background: black;
+  font-weight: bold;
+  padding: 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-title {
+  color: white;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+  border: 2px solid white !important;
+}
+
+.vhHeight{
+  height: 75vh;
+}
+.home-info {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 0 auto;
+}
+.modal-info {
+  width: 70%;
+}
+.toolsTasks {
+  font-weight: bold;
+  font-size: 25px;
+  color: #6889ff;
+  text-align: center;
+  margin-top: 30px;
+}
+.taskTitles {
+  margin-bottom: 30px;
+}
+.home-info label {
+  font-weight: bold;
+  color: #565656;
+  margin-bottom: 6px;
+}
+
+.home-info input {
+  border: 1px solid #74c7f7;
+  border-radius: 5px;
+  padding: 2px 10px;
+  outline: none;
+  font-weight: 500;
+  color: #2a2a2a;
+  margin-bottom: 3px;
+}
+
+.details-info {
+  padding-bottom: 80px !important;
+}
+.home-info textarea:focus {
+  border: 2px solid #2c4def;
+}
+.home-info input:focus {
+  border: 2px solid #2c4def;
+}
+.arrow {
+  text-align: center;
+  font-size: 40px;
+  color: green;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+/* All tasks */
+.allTasks-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.taskTitle {
+  overflow-wrap: break-word;
+}
+.taskDetails {
+  overflow-wrap: break-word;
+}
+.all-task-info {
+  width: 300px;
+  background: #f9f9f9;
+  padding: 15px;
+  box-shadow: -1px 4px 7px 0px #afaaaa;
+  border-radius: 5px;
+}
+.edit {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  color: #100889;
+}
+.cursor {
+  cursor: pointer;
+}
+hr {
+  margin: 4px;
+}
+.modal-backdrop.show {
+  opacity: 0.1;
+}
+.rdp-month:last-child {
+  margin: 20px auto;
+}
+
+.footers {
+  margin-top: 50px;
+  padding: 20px 0px;
+  background: black;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.checkbox:hover .blank {
+  display: none;
+}
+.checkbox:hover .show {
+  display: block;
+}
+.icons {
+  margin: 0px 10px;
+  font-size: 25px;
+  color: blue;
+}
+
+@media screen and (max-width: 688px) {
+  .allTasks-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px !important;
+  }
+  .all-task-info {
+    margin: 0 auto;
+  }
+  .home-info {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .allTasks-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px !important;
+    gap: 40px;
+  }
+  .all-task-info {
+    margin: 0 auto;
+  }
+  .home-info {
+    width: 70%;
+  }
+}
